@@ -1,0 +1,10 @@
+.addButton{
+    margin-bottom: 30px;
+}
+
+  @media screen and (min-width: 600px) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }}

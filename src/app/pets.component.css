@@ -1,0 +1,29 @@
+
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+  text-align: center;
+}
+button{
+    margin: 5px;
+}
+
+
+@media screen and (min-width: 600px) {
+  
+  .cell {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+    text-align: center;
+  }
+}

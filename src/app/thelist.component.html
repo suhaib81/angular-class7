@@ -1,0 +1,9 @@
+<p class="addButton">
+  <button type="button" (click)="addItem()">Add new Pet</button>
+</p>
+<p>
+  This is my List :
+</p>
+<div class="grid">
+  <app-pets *ngFor="let pet of pets" [pet]="pet"></app-pets>
+</div>
