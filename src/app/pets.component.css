@@ -1,16 +1,19 @@
 
 
 .responsive-image {
-  max-width: 100%;
+  max-width: 200px;
+  margin: 10px;
 }
 
 .cell img {
   display: block;
   text-align: center;
+  
 }
 button{
     margin: 5px;
 }
+
 
 
 @media screen and (min-width: 600px) {
@@ -20,10 +23,10 @@ button{
     text-align: center;
   }
 }
-
 @media screen and (min-width: 1000px) {
   .cell {
     width: calc(100% / 3);
     text-align: center;
   }
 }
+

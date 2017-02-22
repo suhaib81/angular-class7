@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 
 import { PetsComponent } from './pets.component';
 import { ThelistComponent } from './thelist.component';
+import { PetFormComponent } from './pet-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PetsComponent,
-    ThelistComponent
+    ThelistComponent,
+    PetFormComponent
   ],
   imports: [
     BrowserModule,

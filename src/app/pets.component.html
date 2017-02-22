@@ -1,7 +1,7 @@
 <div *ngIf="deleted" class="cell">
 
   <img src="{{ pet.img }}" alt="" class="responsive-image">
-  <p><strong>{{ pet.name }} </strong> </p>
+  <p><strong>{{ pet.name | uppercase}} </strong> </p>
   <p>{{ pet.Breed }}</p>
   <p>{{ pet.age }} years</p>
 

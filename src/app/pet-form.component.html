@@ -1,0 +1,24 @@
+<form #petForm="ngForm" (ngSubmit)="onSubmit(petForm.value)">
+  <ul>
+    <li>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" ngModel>
+    </li>
+    <li>
+      <label for="Breed">Breed </label>
+      <input type="text" name="Breed" id="Breed" ngModel>
+
+    </li>
+
+    <li>
+      <label for="age">Age</label>
+      <input type="text" name="age" id="age" ngModel>
+    </li>
+    <li>
+      <label for="img">photo url</label>
+      <input type="text" name="img" id="img" ngModel>
+    </li>
+  </ul>
+
+  <button type="submit">Save</button>
+</form>

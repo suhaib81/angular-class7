@@ -1,6 +1,7 @@
 <p class="addButton">
   <button type="button" (click)="addItem()">Add new Pet</button>
 </p>
+<app-pet-form (myEmitter)="onSubmit($event)" *ngIf="viewform"></app-pet-form>
 <p>
   This is my List :
 </p>

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thelist.component.css']
 })
 export class ThelistComponent implements OnInit {
-
+  viewform: boolean = false;
   pets: any;
   constructor() {
 
@@ -17,9 +17,20 @@ export class ThelistComponent implements OnInit {
       { 'name': 'Horse', 'Breed': 'Arabian', 'age': 10, 'img': 'https://d2ud6pzmcqokoo.cloudfront.net/2/3/32530/arabian_full.png' }
     ];
   }
-  addItem() {
-    alert('coming soon ...')
+ addItem() {
+    this.viewform = true;
   }
+
+onSubmit(newpet){
+if (newpet.name ==='' || newpet.Breed ==='' || newpet.age ===''  || newpet.img ==='' ){
+alert('All fields are required')
+}else{
+this.pets.push(newpet);
+}
+  
+}
+
+
   ngOnInit() {
   }
 }
