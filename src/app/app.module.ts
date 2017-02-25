@@ -8,20 +8,22 @@ import { AppComponent } from './app.component';
 import { PetsComponent } from './pets.component';
 import { ThelistComponent } from './thelist.component';
 import { PetFormComponent } from './pet-form.component';
-
+import { FosterRequestDirective } from './foster-request.directive';
+import { PetService } from './pet.service';
 @NgModule({
   declarations: [
     AppComponent,
     PetsComponent,
     ThelistComponent,
-    PetFormComponent
+    PetFormComponent,
+    FosterRequestDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [PetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
