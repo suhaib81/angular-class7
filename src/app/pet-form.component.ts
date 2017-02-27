@@ -1,4 +1,4 @@
-import { Component, OnInit ,EventEmitter,Output} from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-pet-form',
@@ -7,14 +7,14 @@ import { Component, OnInit ,EventEmitter,Output} from '@angular/core';
 })
 export class PetFormComponent implements OnInit {
 
-@Output() myEmitter = new EventEmitter;
+  @Output() myEmitter = new EventEmitter;
 
   constructor() { }
 
-onSubmit(newpet){
-  
-  this.myEmitter.emit(newpet);
-}
+  onSubmit(newpet) {
+
+    this.myEmitter.emit(newpet);
+  }
   ngOnInit() {
   }
 

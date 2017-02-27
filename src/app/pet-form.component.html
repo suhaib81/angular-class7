@@ -1,7 +1,4 @@
-<form 
-#petForm=  "ngForm" 
-(ngSubmit)="onSubmit(petForm.value)"
->
+<form #petForm="ngForm" (ngSubmit)="onSubmit(petForm.value)">
   <ul>
     <li>
       <label for="name">Name</label>

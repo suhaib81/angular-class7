@@ -1,4 +1,4 @@
-<div *ngIf="deleted" class="cell">
+<div class="cell">
 
   <img src="{{ pet.img }}" alt="" class="responsive-image">
   <p><strong>{{ pet.name | uppercase}} </strong> </p>
@@ -6,6 +6,6 @@
   <p>{{ pet.age }} years</p>
 
 
-  <button type="button" (click)="deleteItem()">delete</button>
+  <button type="button" (click)="deleteItem(pet)">delete</button>
   <button type="button" (click)="updateItem()">update</button>
 </div>

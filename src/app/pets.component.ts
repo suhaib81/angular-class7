@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { PetService } from './pet.service';
 
 @Component({
   selector: 'app-pets',
@@ -7,13 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PetsComponent implements OnInit {
   @Input() pet;
-  deleted: boolean = true;
 
-  constructor() { }
+  constructor(private petService: PetService) { }
 
 
-  deleteItem() {
-    this.deleted = false;
+  deleteItem(pet) {
+    this.petService.delete(pet);
   }
   updateItem() {
     alert('coming soon ...')

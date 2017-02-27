@@ -8,22 +8,17 @@ import { PetService } from './pet.service';
 export class ThelistComponent implements OnInit {
   viewform: boolean = false;
   pets: any;
-  constructor(private petService:PetService) {
+  constructor(private petService: PetService) {
 
     this.pets = this.petService.get();
   }
- addItem() {
+  addItem() {
     this.viewform = true;
   }
 
-onSubmit(newpet){
-if (newpet.name ==='' || newpet.Breed ==='' || newpet.age ===''  || newpet.img ==='' ){
-alert('All fields are required')
-}else{
-this.pets.push(newpet);
-}
-  
-}
+  onSubmit(newpet) {
+    this.petService.add(newpet)
+  }
 
 
   ngOnInit() {
